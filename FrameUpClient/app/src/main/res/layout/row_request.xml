@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="6dp"
+    android:padding="4dp"
+    app:cardCornerRadius="36dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_image_rr"
+            android:layout_width="65dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="16dp"
+            android:adjustViewBounds="true"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/email_rr_lay"
+            android:layout_width="169dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Make me Member of the Society"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_rr_lay"
+            android:layout_width="167dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Muhammad Anique"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/roll_rr_lay"
+            android:layout_width="165dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="20l-2171"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.398"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Add_me_btn_rr"
+            android:layout_width="88dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_stroke"
+            android:text="Add Member"
+            android:textColor="@color/Primary_Color_1"
+            android:textSize="9sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.944"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/req_type_rr_lay_"
+            android:layout_width="66dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_style_gradient"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="becomeMember"
+            android:textColor="@color/white"
+            android:textSize="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_image_rr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

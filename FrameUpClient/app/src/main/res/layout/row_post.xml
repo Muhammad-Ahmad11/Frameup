@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="411dp"
+        android:layout_height="338dp"
+        android:padding="3dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_event"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gradient_bg_3_e"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/e_type_tv"
+                android:layout_width="54dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/blue_it_box"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="Seminar"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Caption_event_tv"
+
+                android:layout_width="360dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_bg_for_profile"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Career Counselling Seminar"
+                android:textAlignment="center"
+                android:textColor="#515150"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_event" />
+
+            <TextView
+                android:id="@+id/Date_tv_event"
+                android:layout_width="74dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="23/12/2022"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/e_type_tv" />
+
+            <TextView
+                android:id="@+id/id__id_post_id"
+                android:layout_width="74dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="164dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="Id : 23"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/s_time_tv"
+                android:layout_width="111dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_bg_for_profile"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Start Time : 11:00 AM"
+                android:textAlignment="center"
+                android:textColor="#515150"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Caption_event_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/end_time_tv"
+                android:layout_width="111dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="4dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_bg_for_profile"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="End Time : 12:00 PM"
+                android:textAlignment="center"
+                android:textColor="#515150"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/s_time_tv" />
+
+            <TextView
+                android:id="@+id/Venue_tv_event"
+                android:layout_width="123dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_bg_for_profile"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Venue : Auditorium"
+                android:textAlignment="center"
+                android:textColor="#515150"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/s_time_tv"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
